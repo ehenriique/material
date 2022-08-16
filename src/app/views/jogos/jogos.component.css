@@ -1,0 +1,36 @@
+.primeiro{
+    
+    background-size: 100%;
+    background-image: url('https://www.esportzy.com/uploads/blog/img_611282a13ca985-56614085-18354285.jpg');
+  }
+  
+.mat-grid-tile-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mat-grid-tile-header{
+    font-style:oblique;
+    text-decoration:underline;
+    
+}
+.mat-grid-tile-header p{
+   margin-left: 50px;
+}
+
+
+.segundo {
+    background-image: url('https://www.profesionalreview.com/wp-content/uploads/2016/11/watch-dogs-2.jpg');
+}
+
+.terceiro  {
+    background-size: 100%;
+    background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/377560/capsule_616x353.jpg?t=1450287062');
+}
+
+
+.quarto {
+    background-size: 100%;
+    background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/1222140/capsule_616x353.jpg?t=1625648054');
+}
+

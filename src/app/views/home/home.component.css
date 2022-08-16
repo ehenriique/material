@@ -1,0 +1,48 @@
+
+picture{
+  height: 250px;
+  display: flex;
+  justify-content:center; 
+  background-color:black; 
+ }
+
+
+.texto-home {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-style: italic;
+  
+  
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  
+}
+.example-card {
+  max-width: 400px;
+  background-color: #403a40;
+  
+}
+.mat-card-title{
+  margin-left: 50px;
+}
+.example-header-image1 {
+  background-image: url('https://cdn-icons.flaticon.com/png/512/4854/premium/4854302.png?token=exp=1660243460~hmac=058b78359a2a40b9eadb0e0a3a7c4ebe');
+  background-size:cover;
+  
+  
+}
+.example-header-image2{
+  background-size: cover;
+  background-image: url('https://cdn-icons.flaticon.com/png/512/4292/premium/4292834.png?token=exp=1660243657~hmac=925b104a314b064142a4e173157e2cf8');
+}
+.example-header-image3{
+  background-image: url('https://cdn-icons.flaticon.com/png/512/1655/premium/1655377.png?token=exp=1660243738~hmac=0640fcea2fbd10f394e074b713f10261');
+  background-size: cover;
+}
+
+
+
+

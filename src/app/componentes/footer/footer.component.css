@@ -1,0 +1,17 @@
+.lista{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+footer{
+    background-color: #403a40;
+}
+.list-group-item{
+    background-color: #404040;
+    color: white;
+}
+
+.mat-card-header{
+    text-align: center;
+    color: white;
+}
