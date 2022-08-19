@@ -1,40 +1,64 @@
-<mat-tab-group mat-align-tabs="center">
-    <mat-tab label="Lançamentos">
-       <div class="container">
-        <div class="card" style="width: 18rem;">
-            <img srcset="https://image.winudf.com/v2/image/Y29tLmRpc25leS5oYW1tZXJfZ29vX2ljb25fMTUyMjQ2Mjc2M18wNDk/icon.png?w=&fakeurl=1" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">STAR WARS LEGO</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio</p>
-              <a href="#" class="btn btn-primary">Saber mais</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img srcset="https://image.winudf.com/v2/image/Y29tLmRpc25leS5oYW1tZXJfZ29vX2ljb25fMTUyMjQ2Mjc2M18wNDk/icon.png?w=&fakeurl=1" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">STAR WARS LEGO</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio</p>
-              <a href="#" class="btn btn-primary">Saber mais</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img srcset="https://image.winudf.com/v2/image/Y29tLmRpc25leS5oYW1tZXJfZ29vX2ljb25fMTUyMjQ2Mjc2M18wNDk/icon.png?w=&fakeurl=1" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">STAR WARS LEGO</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio</p>
-              <a href="#" class="btn btn-primary">Saber mais</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img srcset="https://image.winudf.com/v2/image/Y29tLmRpc25leS5oYW1tZXJfZ29vX2ljb25fMTUyMjQ2Mjc2M18wNDk/icon.png?w=&fakeurl=1" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">STAR WARS LEGO</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio</p>
-              <a href="#" class="btn btn-primary">Saber mais</a>
-            </div>
-          </div>
-       </div>
+
+<div class="container">
+
+<mat-tab-group mat-align-tabs="center"  animationDuration="0ms" color="warn">
+  
+  <mat-tab label="Entrar em Contato"  >
+
+      <p>Entre em Contato</p>
+      <br>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <div>
+        <label for="nome">Nome:</label>
+        <input id="nome" name="nome" ngModel type="text">
+      </div>
+      
+      <div>
+        <label for="email">E-mail:</label>
+        <input id="email" name="email" ngModel type="text">
+      </div>
+      <br>
+      <div>
+        <label for="texto"></label>
+        <textarea id="texto" name="texto"
+        rows="5" cols="33" placeholder="Deixe sua mensagem" ngModel type="text"> </textarea>        
+      </div>
+      <div>
+        <button type="submit" mat-raised-button color="warn" >Enviar</button>
+      </div>
+    </form>
     </mat-tab>
-    <mat-tab label="Second">Content 2</mat-tab>
-    <mat-tab label="Third">Content 3</mat-tab>
+
+
+
+    <mat-tab label="Fazer Login">
+      <br>
+
+      <p>Fazer Login</p>
+      <br>
+    <form (ngSubmit)="onSubmit2(l)" #l="ngForm">
+      <div>
+        <label for="email">Email</label>
+        <input id="email2" name="email" ngModel type="email">
+      </div>
+      <br>
+      <div>
+        <label for="senha2">Senha</label>
+        <input id="senha2" name="senha2" ngModel type="password">
+
+      </div>
+      <br>
+  <div>
+    <button type="submit" mat-raised-button color="warn">Entrar</button>
+  </div>
+
+    </form>
+
+    </mat-tab>
+
+
   </mat-tab-group>
+</div>
+
+
+<br>
