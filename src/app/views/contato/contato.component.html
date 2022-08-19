@@ -15,13 +15,15 @@
       
       <div>
         <label for="email">E-mail:</label>
+        
         <input id="email" name="email" ngModel type="text">
       </div>
       <br>
       <div>
-        <label for="texto"></label>
-        <textarea id="texto" name="texto"
-        rows="5" cols="33" placeholder="Deixe sua mensagem" ngModel type="text"> </textarea>        
+               <textarea matInput id="texto" name="texto"
+        rows="5" cols="33" placeholder="Deixe sua mensagem" ngModel type="text"></textarea>
+        
+             
       </div>
       <div>
         <button type="submit" mat-raised-button color="warn" >Enviar</button>
@@ -41,12 +43,19 @@
         <label for="email">Email</label>
         <input id="email2" name="email" ngModel type="email">
       </div>
-      <br>
-      <div>
-        <label for="senha2">Senha</label>
-        <input id="senha2" name="senha2" ngModel type="password">
 
-      </div>
+  
+    
+   
+      <br>
+      <mat-form-field appearance="legacy" color="accent">
+        <mat-label for="senha2">Digite sua senha </mat-label>
+        <input matInput name="senha2" ngModel [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+
+      </mat-form-field>
       <br>
   <div>
     <button type="submit" mat-raised-button color="warn">Entrar</button>
@@ -62,6 +71,7 @@
 
 
 <br>
+
 
 
 

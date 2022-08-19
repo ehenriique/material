@@ -8,6 +8,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./contato.component.css'],
 })
 export class ContatoComponent implements OnInit  {
+  hide = true;
 
   constructor() { }
 
@@ -18,10 +19,11 @@ export class ContatoComponent implements OnInit  {
   {
   
     let dados= `
+    
     Nome: ${form.value.nome};
     Email: ${form.value.email};
     Texto: ${form.value.texto};`
-  
+    
   
     console.log(dados)
 
@@ -32,10 +34,13 @@ export class ContatoComponent implements OnInit  {
   
     let dados= `
     Email: ${form.value.email};
-    Senha: ${form.value.senha2} `;
+    Senha: ${form.value.senha2} 
+    `;
+  
   
   
     console.log(dados)
 
   }
+  
 }

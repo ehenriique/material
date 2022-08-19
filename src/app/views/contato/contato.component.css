@@ -27,3 +27,7 @@ input[type=password],[type=email],input[type=text] {
 ::ng-deep .mat-tab-label {
   color: white;
 }
+
+mat-label{
+  color: white;
+}
