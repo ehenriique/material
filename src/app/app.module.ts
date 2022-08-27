@@ -27,6 +27,9 @@ import { JogosComponent } from './views/jogos/jogos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { ContatoComponent } from './views/contato/contato.component';
 import { ComponentesComponent } from './componentes/componentes.component';
+import { LoginComponent } from './views/login/login.component';
+import { CadastroComponent } from './views/login/cadastro/cadastro.component';
+import { BackendComponent } from './backend/backend.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,9 @@ import { ComponentesComponent } from './componentes/componentes.component';
     FooterComponent,
     ContatoComponent,
     ComponentesComponent,
+    LoginComponent,
+    CadastroComponent,
+    BackendComponent,
  
   ],
   imports: [

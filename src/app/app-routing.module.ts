@@ -1,3 +1,5 @@
+import { CadastroComponent } from './views/login/cadastro/cadastro.component';
+import { LoginComponent } from './views/login/login.component';
 import { ContatoComponent } from './views/contato/contato.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HeaderComponent} from 'src/app/componentes/header/header.component'
@@ -29,7 +31,20 @@ const routes: Routes = [
   {   
    path:'contato',
     component: ContatoComponent
+  },
+
+  {
+
+    path: 'login',
+    component: LoginComponent
+  },
+
+  {
+    path:'cadastro',
+    component: CadastroComponent
   }
+
+
 
 ];
 
