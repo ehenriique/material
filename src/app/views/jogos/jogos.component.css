@@ -34,3 +34,12 @@
     background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/1222140/capsule_616x353.jpg?t=1625648054');
 }
 
+
+.mat-tab-group {
+    margin-bottom: 48px;
+  } 
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}

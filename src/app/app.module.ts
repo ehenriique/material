@@ -16,9 +16,9 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatFormFieldModule} from '@angular/material/form-field';
+
 import {MatTabsModule} from '@angular/material/tabs';
 import {TextFieldModule} from '@angular/cdk/text-field';
-
 //paginas
 
 import { HomeComponent } from './views/home/home.component';
@@ -64,6 +64,7 @@ import { BackendComponent } from './backend/backend.component';
     MatFormFieldModule,
     MatTabsModule,
     TextFieldModule,
+    
   
     
   ],

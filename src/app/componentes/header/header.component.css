@@ -1,0 +1,20 @@
+.navbar a {
+    color:white;
+}
+
+.navbar {
+    background-color: #403a40;
+}
+
+
+.navbar button{
+    color: white;
+}
+
+
+input { 
+    border-radius: 10px;
+    background-color: #403a40;
+  
+   
+}
