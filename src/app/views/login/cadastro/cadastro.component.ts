@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Cadastro } from './cadastro.model';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
-  constructor() { }
+  cadastro: Cadastro = {
+    usuario: '',
+    senha: ''
+  }
+
+  constructor(private cadastroService: CadastroService , private router: Router) { }
 
   ngOnInit(): void {
   }
