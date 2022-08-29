@@ -1,4 +1,4 @@
-import { CadastroComponent } from './views/login/cadastro/cadastro.component';
+
 import { LoginComponent } from './views/login/login.component';
 import { ContatoComponent } from './views/contato/contato.component';
 import { FooterComponent } from './componentes/footer/footer.component';
@@ -7,6 +7,7 @@ import { JogosComponent } from './views/jogos/jogos.component';
 import { HomeComponent } from './views/home/home.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CadastroComponent } from './views/login/cadastro/cadastro.component';
 
 const routes: Routes = [
   {
@@ -40,9 +41,10 @@ const routes: Routes = [
   },
 
   {
-    path:'cadastro',
+    path: 'cadastro',
     component: CadastroComponent
   }
+
 
 
 

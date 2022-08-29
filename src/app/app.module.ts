@@ -17,8 +17,12 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatFormFieldModule} from '@angular/material/form-field';
 
+
 import {MatTabsModule} from '@angular/material/tabs';
 import {TextFieldModule} from '@angular/cdk/text-field';
+import { HttpClientModule } from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 //paginas
 
 import { HomeComponent } from './views/home/home.component';
@@ -29,7 +33,6 @@ import { ContatoComponent } from './views/contato/contato.component';
 import { ComponentesComponent } from './componentes/componentes.component';
 import { LoginComponent } from './views/login/login.component';
 import { CadastroComponent } from './views/login/cadastro/cadastro.component';
-import { BackendComponent } from './backend/backend.component';
 
 @NgModule({
   declarations: [
@@ -41,12 +44,9 @@ import { BackendComponent } from './backend/backend.component';
     ContatoComponent,
     ComponentesComponent,
     LoginComponent,
-    CadastroComponent,
-    BackendComponent,
- 
+    CadastroComponent
   ],
   imports: [
-    
     BrowserModule,
     MatCardModule,
     MatSelectModule,
@@ -64,9 +64,8 @@ import { BackendComponent } from './backend/backend.component';
     MatFormFieldModule,
     MatTabsModule,
     TextFieldModule,
-    
-  
-    
+    HttpClientModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

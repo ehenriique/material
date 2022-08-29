@@ -6,5 +6,16 @@
         "usuario": "henrique",
         "senha" :"admin123"
         }
+    ],
+
+    "cadastro":[
+        {
+            "id":2,
+            "usuario": "henrique2",
+            "senha": "admin123"
+        }
     ]
+
+
+    
 }
