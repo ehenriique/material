@@ -9,7 +9,7 @@ import { MatSnackBar} from '@angular/material/snack-bar'
 })
 
 export class CadastroService{
-    baseUrl = "http://localhost:3001/cadastro"
+    baseUrl = "http://localhost:3000/"
 
     constructor (private snackBar: MatSnackBar, private http: HttpClient){ }
 

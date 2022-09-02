@@ -1,21 +1,21 @@
 {
-    "login":[
-
-        {
-       "id":1,
-        "usuario": "henrique",
-        "senha" :"admin123"
-        }
-    ],
-
-    "cadastro":[
-        {
-            "id":2,
-            "usuario": "henrique2",
-            "senha": "admin123"
-        }
-    ]
-
-
-    
+  "login": [
+    {
+      "id": 1,
+      "usuario": "henrique",
+      "senha": "admin123"
+    }
+  ],
+  "cadastro": [
+    {
+      "id": 2,
+      "usuario": "henrique",
+      "senha": "admin123"
+    },
+    {
+      "usuario": "henrique",
+      "senha": "admin123\n",
+      "id": 3
+    }
+  ]
 }
