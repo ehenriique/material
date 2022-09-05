@@ -10,8 +10,12 @@ import { CadastroService } from './cadastro.service';
 })
 
 export class CadastroComponent implements OnInit {
+  
+  cadastros!: Cadastro[]; 
+  displayedColumns = ['id'];
 
   cadastro: Cadastro = {
+    nome: '',
     usuario: '',
     senha: ''
   }
@@ -19,6 +23,9 @@ export class CadastroComponent implements OnInit {
   constructor(private cadastroService: CadastroService, private router: Router) { }
 
   ngOnInit(): void {
+    this.cadastroService.read().subscribe(cadastros =>{
+      this.cadastros
+    })
   }
 
   createCadastro(): void{
@@ -32,7 +39,7 @@ export class CadastroComponent implements OnInit {
   }
 
   tabelasCadastro(): void{
-    this.router.navigate([''])
+    this.router.navigate(['/cadastro/tabela'])
   }
 
 }

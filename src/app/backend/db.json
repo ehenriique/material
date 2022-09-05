@@ -1,21 +1,35 @@
 {
   "login": [
     {
-      "id": 1,
-      "usuario": "henrique",
-      "senha": "admin123"
+      "usuario":"henrique",
+      "senha":"admin123",
+      "id":1
     }
   ],
+
+
+  
   "cadastro": [
-    {
-      "id": 2,
-      "usuario": "henrique",
-      "senha": "admin123"
-    },
     {
       "usuario": "henrique",
       "senha": "admin123\n",
       "id": 3
+    },
+    {
+      "usuario": "henrique",
+      "senha": "admin123\n",
+      "id": 4
+    },
+    {
+      "usuario": [
+        "henrique",
+        "enzohenrique"
+      ],
+      "senha": [
+        "admin123\n",
+        "admin123"
+      ],
+      "id": 5
     }
   ]
 }
