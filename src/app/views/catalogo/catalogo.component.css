@@ -1,0 +1,37 @@
+.catalogo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.titulo {
+    margin-left: 50px;
+}
+
+
+.item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+ .item-price del {
+	opacity: 0.7;
+	margin-right: 10px;
+}
+
+.container .img{
+	height: 120px;
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
+}
+
+
+
+.star-rating li {
+	padding: 0;
+    font-size: 14px;
+	color: #ffc000;
+}
+
+.mat-icon{
+    margin-left: 10px;
+}

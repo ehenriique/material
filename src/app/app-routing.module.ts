@@ -1,8 +1,7 @@
-
+import { ComponentesComponent } from './componentes/componentes.component';
+import { CatalogoComponent } from './views/catalogo/catalogo.component';
 import { LoginComponent } from './views/login/login.component';
 import { ContatoComponent } from './views/contato/contato.component';
-import { FooterComponent } from './componentes/footer/footer.component';
-import { HeaderComponent} from 'src/app/componentes/header/header.component'
 import { JogosComponent } from './views/jogos/jogos.component';
 import { HomeComponent } from './views/home/home.component';
 import { NgModule, Component } from '@angular/core';
@@ -20,14 +19,10 @@ const routes: Routes = [
   }
 ,
   {
-    path: 'header',
-    component: HeaderComponent
-  },
-
-  {
-    path: 'footer',
-    component: FooterComponent
-  },
+    path:'market',
+    component: CatalogoComponent
+  }
+  ,
  
   {   
    path:'contato',
@@ -43,6 +38,10 @@ const routes: Routes = [
   {
     path: 'cadastro',
     component: CadastroComponent
+  },
+  {
+    path: 'crud',
+    component: ComponentesComponent
   }
 
 

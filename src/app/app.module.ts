@@ -16,8 +16,6 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
-
 import {MatTabsModule} from '@angular/material/tabs';
 import {TextFieldModule} from '@angular/cdk/text-field';
 import { HttpClientModule } from '@angular/common/http';
@@ -33,6 +31,7 @@ import { ContatoComponent } from './views/contato/contato.component';
 import { ComponentesComponent } from './componentes/componentes.component';
 import { LoginComponent } from './views/login/login.component';
 import { CadastroComponent } from './views/login/cadastro/cadastro.component';
+import { CatalogoComponent } from './views/catalogo/catalogo.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +43,8 @@ import { CadastroComponent } from './views/login/cadastro/cadastro.component';
     ContatoComponent,
     ComponentesComponent,
     LoginComponent,
-    CadastroComponent
+    CadastroComponent,
+    CatalogoComponent
   ],
   imports: [
     BrowserModule,
