@@ -4,20 +4,23 @@
            <div class="container py-5 h-100">
               <div class="row d-flex justify-content-center align-items-center h-100">
                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                   <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                   <div class="card bg-light text-black" style="border-radius: 1rem;">
                        <div class="card-body p-5 text-center">
                            <div class="login">
                        <div class="mb-md-5 mt-md-4 pb-5">
            
                            <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                           <p class="text-white-50 mb-5">Entre com seu e-mail e senha !</p>
+                           <p class="text-black-50 mb-5">Entre com seu e-mail e senha !</p>
                        </div>
-                       <div class="email">
-                           <div class="form-outline form-white mb-4">
-                           <input type="email" id="login" class="form-control form-control-lg" />
-                           <label class="form-label" for="typeEmailX">Email</label>
-
-                           </div>
+                       
+                       <div class="example-container">
+                        <mat-form-field appearance="outline" [style.width.%]="100"  color="accent">
+                          <mat-label>Digite seu e-mail</mat-label>
+                          <input matInput placeholder="pat@example.com" required>
+                          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                        </mat-form-field>
+                    
+                    </div>
                        </div>
                        <div class="senha">
                    <div class="form-outline form-white mb-4">
@@ -28,7 +31,11 @@
                    <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Esqueceu a senha?</a></p>
    
                    <button class="btn btn-outline-light btn-lg px-5" type="submit" id="logar"  
-                    > Login</button>
+                   (click)="creatLogin()" > Login</button>
+
+                   <button class="btn btn-outline-light btn-lg px-5" type="submit" id="logar"  
+                   (click)="cancelarLogin()" > Cancelar</button>
+
 
 
                    <div class="icons">

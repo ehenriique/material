@@ -26,15 +26,24 @@ export class CadastroService{
     create(cadastro: Cadastro): Observable<Cadastro>{
         return this.http.post<Cadastro>(this.baseUrl, cadastro).pipe(
             map((obj) => obj),
-            catchError( e => this.errorMsg(e))
+            catchError( e => this.sucessMsg(e))
         )
     }
 
     errorMsg(e: any): Observable<any>{
         console.log(e);
-        this.showMessage('Erro', true);
+        this.showMessage('ERRO AO CADASTRAR USUARIO', false);
         return EMPTY
     }
+
+    sucessMsg(e: any): Observable<any>{
+        console.log(e);
+        this.showMessage('USUARIO CADASTRADO COM SUCESSO', true);
+        return EMPTY
+    }
+
+
+   
 
     read(): Observable<Cadastro[]>{
            return this.http.get<Cadastro[]>(this.baseUrl)

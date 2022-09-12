@@ -1,10 +1,6 @@
 
-
-export interface LoginComponent {
-
-
+export interface Login {
     id?: number,
-    email: string,
-    
+    email: string,    
     senha: string
 }
