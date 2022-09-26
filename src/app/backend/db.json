@@ -31,5 +31,19 @@
       ],
       "id": 5
     }
+  ],
+
+  "crud":[
+    {
+      "usuario": "henrique",
+      "produto": "celular",
+      "valor": "",
+      "quantidade": "",
+      "id": 7
+    }
+    
   ]
+
+
+
 }

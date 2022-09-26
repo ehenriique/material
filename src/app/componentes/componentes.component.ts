@@ -1,4 +1,7 @@
+import { Router } from '@angular/router';
+import { Crud } from './componentes.model';
 import { Component, OnInit } from '@angular/core';
+import { ComponentesService } from './componentes.service';
 
 @Component({
   selector: 'app-componentes',
@@ -6,10 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./componentes.component.css']
 })
 export class ComponentesComponent implements OnInit {
-
-  constructor() { }
-
+createCrud() {
+throw new Error('Method not implemented.');
+}
+crud: any;
   ngOnInit(): void {
+    
   }
 
 }
