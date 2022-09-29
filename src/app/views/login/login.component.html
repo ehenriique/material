@@ -1,4 +1,4 @@
-<div class="centro">
+ <div class="centro">
     <div class="vh-200 gradient-custom">
            <div class="container py-5 h-200">
               <div class="row d-flex justify-content-center align-items-center h-100">
@@ -12,22 +12,35 @@
                            <p class="text-black-50 mb-5">Entre com seu e-mail e senha !</p>
                        </div>
                        <div class="email">
-                           <div class="form-outline form-black mb-4">
-                           <input type="email" id="login" class="form-control form-control-lg" />
-                           <label class="form-label" for="typeEmailX">Email</label>
+                        <mat-form-field appearance="fill">                            
 
-                           </div>
+                           <input matInput placeholder="Digite seu email" required type="email" id="login"/>
+                    
+                        </mat-form-field>
                        </div>
                        <div class="senha">
-                   <div class="form-outline form-black mb-4">
-                   <input type="password" id="senha" class="form-control form-control-lg"  />
-                   <label class="form-label" for="typePasswordX">Senha</label>
+                        <mat-form-field appearance="fill">
+                          <input matInput [type]="hide ? 'password' : 'text'">
+                         <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <br>
+                    <mat-label>Senha</mat-label>
+                        </mat-form-field>
                    </div>
-               </div>
                    <p class="small mb-5 pb-lg-2"><a class="text-black-50" href="#!">Esqueceu a senha?</a></p>
-   
-                   <button class="btn btn-outline-light btn-lg px-5" type="submit" id="logar" 
-                    onclick="logar(); return false"> Login</button>
+                
+                    <ngx-recaptcha2 #captchaElem
+                      [siteKey]="siteKey">
+                    </ngx-recaptcha2>
+        
+
+                    <br>
+
+
+                   <button class="btn btn-outline-light btn-lg px-5" type="submit" id="#logar"(click)="efetuarLogin()"> Login</button>
+                   <button class="btn btn-outline-light btn-lg px-5" type="submit" (onclick)="cancelarLogin()">Cancelar</button>
+
 
 
                    <div class="icons">
@@ -50,9 +63,14 @@
    </div>
  </div>
 </div>
+
+
                
 
        <br>
        <br>
        <br>
        <br>
+
+
+      

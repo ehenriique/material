@@ -1,12 +1,14 @@
-
+.mat-form-field {
+ width: 100%;
+ 
+}
    
-    
-
 
   h2 {
     color:black;
   }
 
+  
   .btn{
     font-size: 12px;
     line-height: 1.7;
