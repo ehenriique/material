@@ -4,6 +4,7 @@ import { Route, Router } from '@angular/router';
 import { empty } from 'rxjs';
 import { Login } from './login.model';
 import { LoginService}  from './login.service';
+import * as CryptoJS from 'crypto-js'; 
 
 @Component({
   selector: 'app-login',
@@ -57,7 +58,7 @@ export class LoginComponent implements OnInit {
 
   cancelarLogin(): void{
     this.router.navigate([''])
-  }
+  };
 }
 
 

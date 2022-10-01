@@ -27,31 +27,8 @@ export class LoginService{
 
     }
 
-    create(login: Login): Observable<Login>{
-        return this.http.post<Login>(this.baseUrl, login).pipe(
-            map((obj) => obj),
-            catchError( e => this.sucessMsg(e))
-        )
     }
-
-    errorMsg(e: any): Observable<any>{
-        console.log(e);
-        this.showMessage('SENHA INVALIDA', false);
-        this.showMessage('E-mail invalido', false );
-        this.showMessage('E-mail ou Senha invalido', false);
-        
-        return EMPTY
-    }
-
-    sucessMsg(e: any): Observable<any>{
-        console.log(e);
-        this.showMessage('LOGIN AUTORIZADO', true);
-        this.showMessage(' Login autenticado com sucesso', true)
-        return EMPTY
-    }
-
 
    
 
 
-}

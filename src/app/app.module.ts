@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import * as CryptoJS from 'crypto-js';
+
 // componentes
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +13,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import { MatInputModule } from  '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-import { FormsModule } from '@angular/forms';
+import { FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -20,6 +22,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {TextFieldModule} from '@angular/cdk/text-field';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { NgxCaptchaModule } from 'ngx-captcha';
+
+import 'hammerjs';
 
 //paginas
 
@@ -65,7 +70,14 @@ import { CatalogoComponent } from './views/catalogo/catalogo.component';
     MatTabsModule,
     TextFieldModule,
     HttpClientModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ReactiveFormsModule,
+    MatCardModule,
+    NgxCaptchaModule,
+    
+
+  
+
   ],
   providers: [],
   bootstrap: [AppComponent]
