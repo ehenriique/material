@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
-import { empty } from 'rxjs';
+import { elementAt, empty } from 'rxjs';
 import { Login } from './login.model';
 import { LoginService}  from './login.service';
 import * as CryptoJS from 'crypto-js'; 
@@ -21,15 +21,11 @@ export class LoginComponent implements OnInit {
   login : Login= {
     email: '',
     senha: '',
-    status: true || true,
-    login: undefined,
-    router: undefined
+    status: true || true 
+
   };
 
 
-
-  
- 
   constructor(private loginService: LoginService, private router : Router) { }
 
 
@@ -37,21 +33,26 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.siteKey= '6LdqvUAiAAAAADq1aAbrjmGHzdwzl-pDL6FLaf2D';
 
-
   }
-  efetuarLogin(): void {
-    
-                if (this.login.status == true,Validators.minLength(3),Validators.email)
+
+  efetuarLogin(): void{
+   
+                if ( this.login.senha == ("" && '') && (" " && "="))
                 {
-                  alert ( "Login feito com Sucesso");
-                } else {
-                  alert ( " Login não realizado")
+                  return alert ("Login não realizado") 
+                 
+                } else if (this.login.email,Validators.minLength(3),Validators.email) 
+                {
+                  console.log ("email validado")
+
+                } else  (this.login.status === true,Validators.minLength(3),Validators.email)
+                 {
+                  return console.log("Login Realizado ")
                 }
-               
             }
             catch ()
             {
-                console.log("Unknown error occurred");
+                console.log("Erro Desconhecido");
             }
 
 
